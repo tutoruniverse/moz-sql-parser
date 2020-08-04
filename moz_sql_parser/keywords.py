@@ -55,6 +55,7 @@ for name in sql_reserved_words:
     )
     reserved_keywords.append(value)
 RESERVED = MatchFirst(reserved_keywords)
+reserved_keywords = list(map(str, reserved_keywords))
 
 join_keywords = {
     "join",
